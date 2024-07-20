@@ -1,0 +1,6 @@
+rich
+yaspin
+alive_progress
+colorama
+repuests
+argparse
