@@ -13,7 +13,7 @@ parser.add_argument("-u","--urlonly", action="store_true",help="Sadece URL ekran
 parser.add_argument("-s","--showdied",action="store_true",help="Canlı olmayan linkleri ekrana basar")                
 parser.add_argument("-to","--timeout", type=int,default=5, help="Url başına maksimum kontrol süresi. Default 5")
 parser.add_argument("-b","--byteoutput",action="store_true",help="Anasayfa byte boyutlarının yazılmasını engeller.")
-parser.add_argument("-th","--threads", type=int, default=50, help="Threads sayısı artıkça arama işlemi hızlanır. Default 50")
+parser.add_argument("-th","--threads", type=int, default=10, help="Threads sayısı artıkça arama işlemi hızlanır. Default 10")
 args = parser.parse_args()
 #print(args)                                                          
 def is_live(url):
