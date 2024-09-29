@@ -33,7 +33,9 @@ def get_size(url):
                                                                       
 if not args.byteoutput:                                     
     print("[red underline]uyarı![/] genellikle 40000 byte altı sayfa boyutu o domainin dizipal değil host servisince canlı tutulduğunun göstergesidir.")
-#print(args)                                                          
+#print(args)
+if args.showdied:
+    print("[red underline]uyarı![/] TimeOut olmuş thread'ler için çıktı verilmemektedir.")
 def checker(i):
     url = "https://dizipal{}.com"          
     url_to_check = url.format(i)                        
