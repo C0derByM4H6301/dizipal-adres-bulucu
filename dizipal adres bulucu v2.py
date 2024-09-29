@@ -52,7 +52,7 @@ def checker(i):
             else:                     
                 print(f"Bu URL [red]{url_to_check}[/] canlı değil")
 
-yazilar = [i for i in range(args.range_min,args.range_max+1)]  # 37 adet metin
+yazilar = [i for i in range(args.range_min,args.range_max+1)]
 thread_sayisi = args.threads
 baslangic_index = 0
 time_out = args.timeout
